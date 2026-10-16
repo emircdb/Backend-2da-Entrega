@@ -18,8 +18,6 @@ API REST desarrollada con Express y MongoDB para consultar y administrar documen
 - [Resumen de endpoints](#resumen-de-endpoints)
 - [Detalle de endpoints](#detalle-de-endpoints)
 - [Datos y modelos](#datos-y-modelos)
-- [Limitaciones conocidas](#limitaciones-conocidas)
-- [Licencia](#licencia)
 
 ## Introducción, objetivos y alcance
 
