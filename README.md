@@ -2,7 +2,6 @@
 
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20.19.0-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 ![Versión](https://img.shields.io/badge/versi%C3%B3n-1.0.0-blue)
-![Licencia](https://img.shields.io/badge/licencia-ISC-informational)
 
 API REST desarrollada con Express y MongoDB para consultar y administrar documentos de estaciones. Permite listar, buscar, crear, actualizar y eliminar estaciones almacenadas en la colección `Ypf` de la base de datos `Ypf`.
 
@@ -444,15 +443,3 @@ No existe un esquema formal de MongoDB ni una definición de modelo en el reposi
 | Otros campos | No están definidos por el proyecto. | Se conservan en MongoDB y pueden establecerse mediante `POST` o `$set` en `PUT`. |
 
 La colección no declara unicidad para `id`; por tanto, la implementación no garantiza que sea único. Los endpoints por `id` operan sobre un documento coincidente (y `DELETE` elimina uno).
-
-## Limitaciones conocidas
-
-- No hay operaciones `PATCH` ni otras rutas CRUD aparte de las enumeradas.
-- No hay autenticación, autorización, CORS, validación de esquema, paginación ni filtros.
-- No se proporciona una URL de despliegue, una base de datos de ejemplo ni una carga inicial de datos.
-- El nombre de la base y de la colección está fijado en el código; ambos son `Ypf`.
-- `npm test` no contiene pruebas ejecutables.
-
-## Licencia
-
-El `package.json` declara la licencia **ISC**.
